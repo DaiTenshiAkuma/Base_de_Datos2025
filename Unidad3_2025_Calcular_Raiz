@@ -1,0 +1,23 @@
+public class calcularRaiz {
+
+    static double raiz(double x)
+    {
+        double r, t;
+        r=x;
+        t=0;
+        
+        while(t!=r){
+            t=r;
+            r=0.5*(x/r+r);
+
+        }
+        return r;
+    }
+    public static void main (String[] args){
+        double n=100;
+        duble vr=raiz(n);
+
+        System.out.println("raiz de "+n+"="+vr);
+
+    }
+}
